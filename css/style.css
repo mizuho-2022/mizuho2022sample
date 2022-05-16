@@ -1,0 +1,823 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Serif JP', serif;
+    margin: 0;
+    font-weight: 400;
+}
+/*ヘッダー*/
+.video-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.video-wrap > video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+.header-nav {
+    position: absolute;
+    top: 30px;
+    left: 260px;    
+    display: flex;
+}
+
+.header-nav ul {
+    list-style: none;
+    border-style: none;
+    display: flex;
+    padding: 0 10px 0;
+    margin: 0;
+}
+
+.header-nav ul li {
+    text-align: center;
+    margin: auto 0 auto 25px;
+}
+.white {
+    background-color: #FFFFFF;
+    border-radius: 5px; 
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 500;
+    padding-top: 13px;
+}
+.white img {
+    padding-right: 15px;
+}
+.white a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+.white a {
+    text-decoration: none;
+   
+}
+.white li {
+    position: relative;
+}
+.black li {
+    background-color: #000000;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 15px;
+    
+    margin: auto 0 auto 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px;
+}
+.black a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+.black a {
+    text-decoration: none;
+}
+.white ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: 0.5s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transform-origin: 50% 0;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    display: block;
+    left: 23px;
+}
+.white ul li:hover > ul  {
+    display: block;
+    position: absolute; 
+    background-color: #FFFFFF;
+    border-radius: 4px; 
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 20%);  
+}
+.white ul li ul li {
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 500;
+    padding: 10px 0;
+    left: -5px;
+}
+.hero_logo img {
+    position: absolute;
+    top: 256px;
+    left: 635px;
+    height: 230px;
+}
+
+/*想いを馳せる・・・*/
+.homehead {
+    height: 765px; 
+}
+.coffee-img01 img {
+    width: 120px;
+    height: auto;
+    margin: 135px auto auto 250px;
+    position: relative;
+}
+.fade-in h1 {
+    font-size: 40px;
+    line-height: 60px;
+    margin-top: -30px;
+}
+.coffee-title {
+    text-align: center;
+    position: relative; 
+    z-index: 20;
+}
+.coffee-title img {
+    margin-top: 25px;
+}
+.coffee-img06 img {
+    position: absolute;
+    width: 315px;
+    height: 230px;
+    right: 60px;
+    z-index: 20;
+}
+.coffee-img02 img {
+    width: 195px;
+    height: auto;
+    left: 235px;
+    margin-top: 165px;
+    margin-bottom: 120px;
+    position: relative;
+}
+.coffee-img07 img {
+    width: 385px;
+    height: 225px;
+    position: absolute;
+    left: 140px;
+    margin-top: 355px;
+    z-index: 55;
+}
+.fade-in-text1 {
+    display: flex;
+}
+.coffee-text {
+    display: block;
+    width: 310px;
+    font-family: Noto Sans Jp;
+    font-size: 16px;
+    line-height: 26px;
+    position: absolute;
+    left: 455px;
+    margin-top: 50px;
+}
+.coffee-text p {
+    width: 310px;
+    margin-bottom: 30px;
+}
+
+.coffee-img04 img {
+    margin-top: -260px;
+    position: absolute;
+    object-fit: none;
+    object-position: left;
+    z-index: 0;
+    right: 0;
+}
+.coffee-img05 img{
+    position: absolute;
+    right: 395px;
+    margin-top: 75px;
+}
+.coffee-img03 img{
+    position: absolute;
+    width: 505px;
+    height: 460px;
+    right: 165px;
+    margin-top: 45px;
+    z-index: 50;
+}
+/*Products*/
+.Products {
+    background-color: #F3F3F3;
+   
+}
+.Products-title {
+    text-align: center;
+    padding: 96px;
+    font-family: Noto Sans JP;
+    font-size: 15px;
+}
+.Products img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+.Products-card {
+    display: flex;
+    margin: 0 auto 50px 260px;
+    flex-wrap : wrap;
+    gap: 24px;
+    position: relative;
+    justify-content: flex-start;
+}
+.Products-card a {
+    text-decoration: none;
+    color: #000;
+}
+.item.hv-white {
+    position: relative;
+    background-color: #fff;
+    text-decoration: none;
+    height: 360px;
+    width: 320px;
+    margin-bottom: 26px;
+    z-index: 20;
+    padding: 0;
+    
+} 
+.item.hv-white::after {
+    content: "";
+    position: absolute;
+    height: 384px;
+    width: 344px;
+    margin-bottom: 26px;
+    padding: 12px;
+    background-color: transparent;
+    border: transparent;
+    z-index: -1;
+    left: -12px;
+    top: -12px;
+    transition: 0.6s;
+}
+
+.hv-white:hover::after {
+    border: 1px solid #333;
+    background-color: #fff;
+    z-index: -10;
+}
+
+.Pcard_img img {
+    width: 320px;
+    height: 170px; 
+    
+}
+.Pcard_title {
+    font-size: 20px;
+    line-height: 32px;
+    order: 1;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.Pcard_img {
+    width: 320px;
+    height: 170px;
+    overflow: hidden;
+}
+  
+.Pcard_body {
+    padding: 16px 40px 40px;
+    
+}
+  
+.Pcard_text1 {
+    font-size: 12px;
+    line-height: 19px;
+    font-family: "Noto Sans JP"; 
+}
+  
+.Pcard_text2 {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    font-size: 12px;
+}
+
+.subsucription {
+    text-align: center;
+}
+.subsucription img {
+    width: 755px;
+    height: 130px;
+    margin-bottom: 95px;
+}
+/*story*/
+.story-title-img {
+    width: 100%;
+    height: 650px; 
+}   
+.story-title-img img{
+    object-fit: none;
+    object-position: 50% 50%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 0;   
+}
+.story-title {
+    position: absolute;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    left: 50%;
+    padding: 96px;
+    font-family: Noto Sans JP;
+    font-size: 15px;   
+    z-index: 20;
+}
+.story-title h3 {
+    text-align: center;
+}   
+.story-text {
+    width: 490px;
+    font-family: Noto Sans JP;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    position: relative;
+    margin-top: -370px;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    left: 50%;
+}
+.story {
+    position: relative;
+}
+.story_img_pc01 {
+    position: absolute;
+    z-index: 30;
+    bottom: 50%;
+    left: 0;
+}  
+.story_img_pc02 {
+    position: absolute;
+    z-index: 30;
+    bottom: 50%;
+    right: 0;
+}  
+.story-img {
+    position: relative;
+}
+.story-img-wrap :hover :not(.story-img-link,.story-img-link p) {
+    opacity: .8;
+}
+.story-img img {
+    width: 333px;
+    height: 220px;
+    position: relative;  
+}
+.story-img-link {
+    width: 252px;
+    height: 43px;
+    background-color: #FFFFFF;
+    border: 0.5px solid #000000;
+    display: flex;
+    position: absolute;
+    z-index: 50;
+    top: 160px;
+    left: 40px;
+}
+.story-img p {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px 25px 96px;   
+}
+.story-img-wrap {
+    display: flex;
+    flex-wrap : wrap;   
+    margin: 65px 260px 50px;
+    width: 1000px;  
+}
+.story-img-wrap:after {
+    content: "";
+    display: block;
+    width: 33.3%;  
+    height: 220px;
+}
+.link-li {
+    text-align: right;
+    
+    font-size: 16px; 
+    line-height: 26px;
+}
+.link-li a {
+    text-decoration: none;
+    position: relative;
+    
+}
+.link-li a::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 0.8px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+.link-li a:hover::after {
+    transform: scale(1, 1);
+}
+.story-link-li {
+    display: inline-block;
+    padding-bottom: 96px;
+    margin: 0 260px 0; 
+}
+/*news*/
+.news {
+    background-color: #F3F3F3;
+}
+.news-title {
+    margin: auto auto 45px 250px;
+    position: relative;
+    padding-top: 25px;
+}
+.news-title h3 {
+    font-size: 25px;
+    font-family: 'Roboto@wght400';
+    line-height: 25px;
+    letter-spacing: .04em;
+    font-weight: lighter;
+    transform: scale(0.8, 1);
+    transform-origin: top left;
+    position: relative;
+}
+.news-title p {
+    font-size: 12px;
+    line-height: 12px;
+    font-family: 'Noto Sans jp';
+    font-weight: 500;
+}
+.news-title::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 24px;
+    position: absolute;
+    background-color: #000000;
+    top: -15px;
+    transform: rotate(30deg);
+    transform-origin: bottom left;
+}
+
+.news-card-wrap {
+    display: flex;
+    flex-wrap : wrap;
+    width: 1000px;
+    margin: auto 250px 50px;
+    gap: 24px 40px;
+}
+.news-card-wrap a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+
+}
+.item.hv-gray {
+    width: calc(50% - 24px);
+    margin-bottom: 0;
+    display: flex;
+    position: relative;
+    z-index: 10;
+
+} 
+.item.hv-gray::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 24px);
+    height: calc(100% + 24px);
+    margin-bottom: 26px;
+    padding: 12px;
+    background-color: transparent;
+    border: transparent;
+    z-index: -1;
+    left: -12px;
+    top: -12px;
+    transition: 0.5s;
+} 
+.hv-gray:hover::after {
+    border: 1px solid #666;
+    background-color: #EEEEEE;
+    z-index: -10;
+}
+.Ncard_img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+}
+.Ncard_body {
+    margin-left: 20px;
+    font-family: "Noto Sans JP";
+}
+.Ncard_date {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.Ncard_text {
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: 'Noto Sans JP',-apple-system,BlinkMacSystemFont,'メイリオ',sans-serif;
+}
+.news-link-li {
+    display: inline-block;
+    margin: auto 260px 96px;
+}
+
+/*Articles*/
+.Articles {
+   margin: 0 250px 0 250px; 
+}
+.articles-title {
+    margin-bottom: 50px;
+    position: relative;
+    padding-top: 25px;
+}
+.articles-title h3 {
+    font-size: 25px;
+    font-family: 'Roboto@wght400';
+    line-height: 25px;
+    letter-spacing: .04em;
+    font-weight: lighter;
+    transform: scale(0.8, 1);
+    transform-origin: top left;
+    position: relative;
+}
+.articles-title p {
+    font-size: 12px;
+    line-height: 12px;
+    font-family: 'Noto Sans jp';
+    font-weight: 500;
+}
+.articles-title::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 24px;
+    position: absolute;
+    background-color: #000000;
+    top: -15px;
+    transform: rotate(30deg);
+    transform-origin: bottom left;
+}
+.articles-card-wrap {
+    display: flex;
+    width: 1000px;
+    gap: 24px 24px;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+
+}
+.item.hv-gray-A {
+    width: calc(100% / 3 - 24px);
+    height: 307px;
+    margin-bottom: 0;
+    display: block;
+    position: relative;
+    z-index: 10;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Noto Sans Jp';
+} 
+.item.hv-gray-A::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 24px);
+    height: calc(100% + 24px);
+    margin-bottom: 26px;
+    padding: 12px;
+    background-color: transparent;
+    border: transparent;
+    z-index: -1;
+    left: -12px;
+    top: -12px;
+    transition: 0.5s;
+} 
+.hv-gray-A:hover::after {
+    border: 1px solid #666;
+    background-color: #EEEEEE;
+    z-index: -10;
+}
+.articles_image_01 {
+    width: 100%;
+    height: 100%;
+    
+}
+.articles_img {
+    position: relative;
+    width: calc(100% / 3 -24px);
+    height: 200px;
+}
+
+.articles_img_date p {
+    position: absolute;
+    background-color: #FFFFFF;
+    font-size: 12px;
+    padding: 8px 16px;
+    font-weight: 500;
+    bottom: 0;
+    left: 0; 
+}
+.articles_text {
+    font-size: 15px;
+    line-height: 24px;
+    padding: 16px 0;
+}
+
+.articles_img_detail {
+    font-size: 10px;
+    font-weight: 500;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.a-dentail-green {
+    color: #499115;
+    background-color: #CBD6C5;
+    border: 1px solid #8CB56F;
+    padding: 4px 8px 5px;
+}
+.a-dentail-gray {
+    color: #000000;
+    background-color: transparent;
+    border: 1px solid #777777;
+    padding: 4px 8px 5px;
+}
+.article-link-li {
+    display: inline-block;
+    margin-bottom: 96px;
+}
+
+/*wholesale*/
+.wholesale {
+    position: relative;
+    background-color: #F1F6F7;
+	background-image:
+	 linear-gradient(-90deg, #ECF2F3 50%, transparent 50%);
+	background-size: 140px 140px;
+    z-index: -1;
+}
+
+.wholesale-area {
+    width: 1000px;
+    padding: 96px 0;
+    margin-left: calc( 50% - 500px);   
+}
+.wholesale-title-img {
+    position: absolute;
+    top: -20px;
+    left: 110px;
+    width: 200px;
+    height: 250px;
+    object-fit: none;
+    object-position: right;
+    z-index: 20;
+}
+.wholesale-title {
+    width: 540px;
+    height: 120px;
+    
+    background-size: cover;
+    background-image: url(../海の向こうコーヒー/img/deco_title_wholesale_pc.png);
+    padding-bottom: 0;
+    border: 1px solid #000;
+    margin-bottom: 48px;
+    position: absolute;
+    z-index: 30;
+    
+}
+.wholesale-title h2{
+    font-size: 15px;
+    font-family: 'Noto Sans Jp';
+    z-index: 0;
+}
+.wholesale-subtitle {
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.wholesale_products {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 75px;
+}
+.wholesale_products-img img {
+    width: 43px;
+    height: 25px;
+    position: absolute;
+    top: 480px;
+}
+.wholesale-img {
+    margin-left: 20px;
+}
+.wholesale-img img {
+    width: 150px;
+    height: auto;
+    margin-left: 12px;
+}
+.wholesale_products_text p{
+    font-family: 'Noto Sans Jp';
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    width: 308px;
+    height: 128px;
+    margin-left: 64px;
+}
+.wholesale_products_text {
+    height: 215px;
+    display:flex;
+  flex-flow: column;
+}
+.wholesale_detail {
+    align-items: flex-end;
+}
+.wholesale-img3 img {
+    width: 308px;
+    height: 321px;
+    position: absolute;
+    left: 1030px;
+    top: 260px;
+    z-index: 20;
+    
+}
+.wholesale-subtitle2 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.slider-area {
+    width: 100%;
+}
+ 
+.slider-area img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+/*About us*/
+.about-area {
+    width: 1000px;
+    padding: 96px 0;
+    margin-left: calc( 50% - 500px);
+    
+}
+.about-title {
+    margin: auto auto 45px 250px;
+    position: relative;
+    padding-top: 25px;
+}
+.about-title h3 {
+    font-size: 25px;
+    font-family: 'Roboto@wght400';
+    line-height: 25px;
+    letter-spacing: .04em;
+    font-weight: lighter;
+    transform: scale(0.8, 1);
+    transform-origin: top left;
+    position: relative;
+}
+.about-title p {
+    font-size: 12px;
+    line-height: 12px;
+    font-family: 'Noto Sans jp';
+    font-weight: 500;
+}
+.about-title::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 24px;
+    position: absolute;
+    background-color: #000000;
+    top: -15px;
+    transform: rotate(30deg);
+    transform-origin: bottom left;
+}
